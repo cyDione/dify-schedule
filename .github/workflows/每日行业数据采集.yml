@@ -1,4 +1,4 @@
-name: Auto
+name: 每日行业数据采集
 
 on:
   schedule:
