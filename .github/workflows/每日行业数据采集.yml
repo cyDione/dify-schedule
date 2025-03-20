@@ -2,13 +2,13 @@ name: 每日行业数据采集
 
 on:
   schedule:
-    - cron: "30 22 * * *" # 北京时间上午06:30
+    - cron: "00 14 * * *" # 北京时间下午10点 utc+8
   workflow_dispatch:
 
 env:
-  DIFY_TOKENS: ${{ secrets.DIFY_TOKENS }}
+  DIFY_TOKENS: "app-VJNj60gLrVQat1oWDvnT7pbs"
   DIFY_BASE_URL: ${{ secrets.DIFY_BASE_URL }}
-  DIFY_INPUTS: ${{ secrets.DIFY_INPUTS }}
+  DIFY_INPUTS: '{"hangye_name":"景观照明","keyword_name":"中标","kownledge_id":"ceae4296-0e7b-4e9d-9a33-aa498adef802"}'
   EMAIL_USER: ${{ secrets.EMAIL_USER }}
   EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
   EMAIL_TO: ${{ secrets.EMAIL_TO }}
