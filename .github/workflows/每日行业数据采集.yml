@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
 
 env:
-  DIFY_TOKENS: "app-9CtBzx2czJNKePxm1edRUAMD"
+  DIFY_TOKENS: ${{ secrets.DIFY_MEIRICAIJISHUJU_TOKEN }}
   DIFY_BASE_URL: ${{ secrets.DIFY_BASE_URL }}
-  DIFY_INPUTS: '{}'
+  DIFY_INPUTS: ${{ secrets.DIFY_INPUTS }}
   EMAIL_USER: ${{ secrets.EMAIL_USER }}
   EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
   EMAIL_TO: ${{ secrets.EMAIL_TO }}
